@@ -1,0 +1,11 @@
+<h1>Edit your Flat!</h1>
+
+<%= simple_form_for @flat do |f| %>
+  <%= f.input :name, label: 'What is your flat called?'%>
+  <%= f.input :address, label: 'Address:' %>
+  <%= f.input :description, label: 'Description' %>
+  <%= f.input :number_of_guests, :input_html => { :type => "number"}, label: 'Number of Guests' %>
+  <%= f.input :price_per_night, :input_html => { :type => "number"}, label: 'Price per night' %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
+
